@@ -1,0 +1,53 @@
+<div class="container">
+    <h2>Reactive form 1</h2>
+    <form [formGroup]="studreact" (ngSubmit)="studdata();">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" formControlName="name">
+            <span *ngIf="studreact.get('name').touched && studreact.get('name').hasError('required')" >This filled is must required</span>
+            <p *ngIf="studreact.get('name').touched && studreact.get('name').hasError('minlength')" >minlength is 5</p>
+            <span *ngIf="studreact.get('name').touched && studreact.get('name').hasError('maxlength')" >maxlength is 10</span>
+            <span *ngIf="studreact.get('name').touched && studreact.get('name').hasError('pattern')" >pattern</span>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" formControlName="mobile">
+            <span *ngIf="studreact.get('mobile').touched && studreact.get('mobile').hasError('required')" >This filled is must required</span>
+            <span *ngIf="studreact.get('mobile').touched && studreact.get('mobile').hasError('minlength')" >minlength is 5</span>
+            <span *ngIf="studreact.get('mobile').touched && studreact.get('mobile').hasError('maxlength')" >maxlength is 10</span>
+            <span *ngIf="studreact.get('mobile').touched && studreact.get('mobile').hasError('pattern')" >pattern</span>
+
+
+        </div>
+
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" formControlName="email">
+        <span *ngIf="studreact.get('email').touched && studreact.get('email').hasError('required')" >This filled is must required</span>
+        <span *ngIf="studreact.get('email').touched && studreact.get('email').hasError('minlength')" >minlength is 5</span>
+        <span *ngIf="studreact.get('email').touched && studreact.get('email').hasError('maxlength')" >maxlength is 10</span>
+
+
+
+
+      </div>
+
+
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+      <button (click)="filldata();" class="btn btn-success">fill data</button>&nbsp;
+      <button (click)="cleardata();" class="btn btn-danger">clear data</button>
+    </form>
+  </div>
+
+

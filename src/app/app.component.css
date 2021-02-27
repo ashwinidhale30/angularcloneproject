@@ -1,0 +1,176 @@
+*{
+    padding:0px;
+    margin:0px;
+    
+}
+
+   ul {
+    list-style-type: none;
+    background-color:dimgray;
+  }
+  
+  ul li {
+    float:left;
+    display:block;
+    
+  }
+  
+  li a {
+    padding: 8px;
+    color:white;
+    display:block;
+    text-decoration:none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  #test {
+    color:black;
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+
+  }
+
+
+  #test li a:hover {
+    background-color:lightgrey;
+    color:black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************w3school end***********************************************************/
+
+
+
+/***********************************************
+.a{
+    color:red;
+}
+button{
+
+    background-color:black;
+    color:white;
+}
+
+.xyz{
+    background-color: yellow;
+    color:red;
+}
+
+.ooo{
+  height:100px;
+  width:300px;
+}
+
+.A{
+    color:green;
+}
+
+*************************************/

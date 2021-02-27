@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Reactive form</h2>
+    <form #regiform="ngForm" (ngSubmit)="reactiveform(regiform)">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" ngModel required maxlength="10" #name="ngModel">
+            <span style="color:red;" *ngIf="name.touched && !name.valid">This filled is must required</span>
+            <!----<span style="color:blue;" *ngIf="name.touched && maxlength.valid">maxlength is 10</span>---->
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" ngModel required>
+        </div>
+
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" ngModel required>
+      </div>
+
+
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="!regiform.valid">Submit</button>
+    </form>
+  </div>
+

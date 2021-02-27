@@ -1,0 +1,83 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "ash",
+      "address": "pune"
+    },
+    {
+      "id": 51,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 81,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 82,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 83,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 84,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 85,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 86,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": 87,
+      "name": "wini",
+      "address": "nagpur"
+    },
+    {
+      "id": "2",
+      "name": "sonal",
+      "address": "nepal"
+    },
+    {
+      "id": 88,
+      "name": "sonu",
+      "address": "latur"
+    }
+  ],
+  "college": [
+    {
+      "id": 11,
+      "name": "kalyani",
+      "city": "kashmir"
+    },
+    {
+      "id": "5",
+      "name": "priyadrshni",
+      "city": "nashik"
+    },
+    {
+      "id": "10",
+      "name": "rashmi",
+      "city": "nagpur"
+    }
+  ],
+  "job": [
+    {
+      "id": 21,
+      "name": "angular developer",
+      "address": "pune"
+    }
+  ]
+}

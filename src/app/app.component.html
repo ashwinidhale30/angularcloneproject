@@ -1,0 +1,459 @@
+<!------------------w3 website starts from here---------------------------------------------->
+<div class="container-fluid">
+      <div class="row" style="height:50px;line-height:40px;">
+        <div class="col-md-3" style="color: green;font-size:30px;text-align:center;"><b>w3schools.com</b></div>
+        <div class="col-md-7" style="color:black;text-align:right;">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+        <div class="col-md-2" ><button class="btn btn-success" style="margin-left:20px;padding:5px;width:60%;">LOG IN</button></div>
+      </div>
+
+      <!-------menubar------------------------->
+
+      <div class="row">
+      <div class="col-md-12">
+        <ul class="navbar">
+          <li><a  style="background-color: green;">Home</a></li>
+          <li><a [routerLink]="[]">HTML</a></li>
+          <li><a [routerLink]="[]">CSS</a></li>
+          <li><a [routerLink]="[]">JAVASCRIPT</a></li>
+          <li><a [routerLink]="[]">SQL</a></li>
+          <li><a [routerLink]="[]">PYTHON</a></li>
+          <li><a [routerLink]="[]">PHP</a></li>
+          <li><a [routerLink]="[]">BOOTSTRAP</a></li>
+          <li><a [routerLink]="[]">HOW TO</a></li>
+          <li><a [routerLink]="[]">W3.CSS</a></li>
+          <li><a [routerLink]="[]">JQUERY</a></li>
+          <li><a [routerLink]="[]">MORE</a></li>
+          <li><a [routerLink]="[]">REFERENCES</a></li>
+          <li><a [routerLink]="[]">CERTIFICATES</a></li>
+          <li><a [routerLink]="[]">SEARCH</a></li>
+        </ul>
+      </div>
+      </div>
+
+
+      <!------sidemenubar--------------------------->
+
+     <div class="row">
+
+        <div class="col-md-2">
+          <ul class="navbar-nav" id="test">
+            <li style="margin:12px;"><b>HTML tutorials</b></li>
+            <li><a [routerLink]="['/home']">HTML Home</a></li>
+            <li><a [routerLink]="['/introduction']">HTML Introduction</a></li>
+            <li><a [routerLink]="['/editors']">HTML Editors</a></li>
+            <li><a [routerLink]="['/basic']">HTML Basic</a></li>
+            <li><a [routerLink]="['/elements']">HTML Elements</a></li>
+            <li><a [routerLink]="['/attributes']">HTML Attributes</a></li>
+            <li><a [routerLink]="['/headings']">HTML Headings</a></li>
+            <li><a [routerLink]="['/paragraphs']">HTML Paragraphs</a></li>
+            <li><a [routerLink]="['/styles']">HTML Styles</a></li>
+            <li><a [routerLink]="['/formatting']">HTML Formating</a></li>
+            <li><a [routerLink]="['/quatation']">HTML Quatation</a></li>
+            <li><a [routerLink]="['/comments']">HTML Comments</a></li>
+            <li><a [routerLink]="['/colors']">HTML Colors</a></li>
+            <li><a [routerLink]="['/css']">HTML CSS</a></li>
+            <li><a [routerLink]="['/links']">HTML Links</a></li>
+            <li><a [routerLink]="['images']">HTML Images</a></li>
+            <li><a [routerLink]="['/tables']">HTML Tables</a></li>
+          </ul>
+        </div>  
+    
+
+        <div class="col-md" style="border:1px solid lightsteelblue;"><router-outlet></router-outlet></div>
+
+</div>
+
+
+</div>
+
+
+
+<!----------------------w3 end here---------------------------------------------------------->
+
+
+
+<!---<router-outlet></router-outlet>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------
+  <span>{{ title }} app is running!</span>
+  <p>{{name}}</p> 
+  <div>{{10+20}}</div>
+  <div>{{ans}}</div>
+
+<div class="a"><h1>hello Good Morning...</h1></div>
+<div class="b"><h2>hello world...</h2></div>
+-------------------->
+<!----------------------ng event--------------------------------
+<p>{{title}}</p>
+<p>2+5</p>
+<p>{{2+5}}</p>
+<button (click)="pqr()">Addition</button>
+-------------->
+
+<!------------------------------ngIf-------------------------------
+
+
+<p *ngIf="msg; else sms">welcome</p>
+
+<ng-template #sms>HELLO,How are you?</ng-template>
+------------------------>
+
+<!--------------------------------ngFor-------------------------------
+
+<div *ngFor="let data of student">
+  <p>{{data.studroll}}</p>
+  <p>{{data.studname}}</p>
+</div>
+
+--------------------------
+<table border="1">
+  <tr>
+    <th>STUDROLL</th>
+    <th>STUDNAME</th>
+    <th>STUDINDEX</th>
+    <th>STUDFIRST</th>
+    <th>STUDLAST</th>
+    <th>STUDEVEN</th>
+    <th>STUDODD</th>
+  </tr>
+
+  <tr *ngFor="let data of student,index as i,first as f,last as l,even as e,odd as o">
+    <td>{{data.studroll}}</td>
+    <td>{{data.studname}}</td>
+    <td>{{i}}</td>
+    <td>{{f}}</td>
+    <td>{{l}}</td>
+    <td>{{e}}</td>
+    <td>{{o}}</td>
+  </tr>
+</table>
+-------------->
+<!--------------------ng style---------------------------------------------------
+
+<p [ngStyle]="{'color':'red','background-color':'black'}">happy day it is</p>
+
+<p [ngStyle]="{'color':abc,'background-color':abcd}">happy day</p>
+
+<!------------------------ng class------------------------------------------------------
+
+<p [ngClass]="[classname,classname1]">justice for shushant</p>
+
+<!-----------------------data binding------------interpolation---------------------------------------
+
+<h1>{{wish}}</h1>
+<div>{{course.php}}{{course.java}}{{course.python}}</div>
+
+<p>{{course1[0]}} {{course1[1]}} {{course1[2]}}</p>
+
+<!-------property binding----------------------
+
+<p [ngClass]="'A'">old is gold</p>
+
+<div [ngStyle]="{'color':'blue'}">peace within</div>
+
+<div [ngStyle]="{'color':val}">peace within</div>
+
+<p [innerHTML]='msg1'></p>
+<input [placeholder]='msg2'>
+
+<!-----------------event binding---------------------------------------
+
+<button (click)='xxx()'>click here</button>
+
+<button (click)='yyy(10,20)'>add</button>
+
+<!---------two way data binding-----------------------------------------------------
+
+<input [(ngModel)]="no1">
+<input [(ngModel)]="no2">
+
+<div>{{ no1 + no2 }}</div>---->
+
+<!------------pipes-----------------------------inbuilt pipe---------------------------
+
+<div>{{student1[2] | uppercase}}</div>
+<div>{{student1[0] | lowercase}}</div>
+<div>{{student1[3] | date}}</div>
+<div>{{student1[5] | currency}}</div>
+<div>{{student1 | json}}</div>
+<!-------------------------------------------Parameterized pipe---------------------------------
+
+<div>{{student1[5] | currency:'INR'}}</div>
+
+<div>{{student1[3] | date:'MM'}}</div>
+<div>{{student1[3] | date:'MMM'}}</div>
+<div>{{student1[3] | date:'MMMM'}}</div>
+
+<div>{{student1[3] | date:'MMMM dd'}}</div>
+<div>{{student1[3] | date:'MMMM dd yy'}}</div>
+<div>{{student1[3] | date:'MMMM dd yyyy'}}</div>
+
+<!----------------------------------chaining pipe---------------combination of all-----------------------
+
+<div>{{student1[2] | uppercase | json}}</div>
+
+<!--------------------routing strategy---------------------------------------------
+
+path strategy---
+
+www.facebook.com/user
+www.facebook.com/user/100
+www.facebook.com/?user=145;
+
+hash strategy--- ( wild routing)
+
+www.facebook.com/#/user
+www.facebook.com/#/user/100
+www.facebook.com/#/?user=145;
+
+-------------->
+<!--------------------------router link------------------------------------
+
+<p><a href="/student">student</a></p>
+
+<p><a href="/studentdetails">studentdetails</a></p>
+
+<!--------parameterized component routing link-----------------------------------
+
+<p><a href="/studcount">studcount</a></p>
+
+<!------------redirecting  routing------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
